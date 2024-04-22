@@ -1,0 +1,38 @@
+server:
+  port: 8082
+rpc:
+  zc:
+    consumer:
+      # redis地址
+      redis-address: 192.168.217.130:6379
+      # zookeeper server
+      registryAddress: 192.168.217.130:2181
+      # registry center type, zookeeper/nacos/apoll/etcd/eureka
+      registryType: zookeeper
+      # registry loadbalance type: zkconsistenthash
+      loadBalanceType: zkconsistenthash
+      # proxy type/javassist/jdk
+      proxy: cglib
+      # version
+      version: 1.0.0
+      # group
+      group: johnson
+      # zkconsistenthash
+      serializationType: zkconsistenthash
+      # timeout
+      timeout: 30000
+      # async
+      async: false
+      # oneway
+      oneway: false
+      # heartbeatInterval
+      heartbeatInterval: 30000
+      # scanNotActiveChannelInterval
+      scanNotActiveChannelInterval: 60000
+      # retryInterval
+      retryInterval: 1000
+      # retryTimes
+      retryTimes: 3
+spring:
+  application:
+    name: hhhhh

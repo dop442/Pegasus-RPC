@@ -1,0 +1,13 @@
+server:
+  port: 8290
+
+rpc:
+  zc:
+    provider:
+      server-address: 127.0.0.1:20890
+      registry-address: 192.168.217.130:2181
+      reflect-type: jdk
+      registry-load-balance-type: random
+      registry-type: zookeeper
+      heartbeat-interval: 30000
+      scan-not-active-channel-interval: 60000

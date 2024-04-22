@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+rpc:
+  zc:
+    provider:
+      server-address: 0.0.0.0:20881
+      registry-address: 192.168.217.130:2181
+      registry-type: zookeeper
+      registry-load-balance-type: random
+      reflect-type: cglib
+      heartbeat-interval: 30000
+      server-registry-address: 192.168.217.130:20881

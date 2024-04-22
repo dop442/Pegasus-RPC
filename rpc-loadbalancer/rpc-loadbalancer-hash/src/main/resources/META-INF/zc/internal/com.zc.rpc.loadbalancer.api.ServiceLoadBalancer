@@ -1,0 +1,1 @@
+hash = com.zc.rpc.loadbalancer.hash.HashServiceLoadBalancer

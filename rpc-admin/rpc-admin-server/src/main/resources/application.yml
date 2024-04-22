@@ -1,0 +1,17 @@
+admin-server:
+  discovery:
+    registryType: zookeeper
+    registryAddr: 192.168.217.130:2181
+    registryLoadBalance: random
+    zookeeperPath: /zc_rpc
+
+server:
+  port: 8709
+
+spring:
+  redis:
+    host: 192.168.217.130
+    port: 6379
+
+token:
+  privateKey: zczczczcz
